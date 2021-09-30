@@ -1,4 +1,4 @@
-/* Add CSS styling here */
+/*CSS Reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,59 +12,48 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
-body {
-    line-height: 1;
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /*border:1px solid grey;*/
 }
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 /*General Styles*/
 html{
     font-size:62.5%;
 }
 body{
     font-size:1.6rem;
-    background-color:#FBFFFB;
+    background-color: #b3b3ff;
     line-height:1.5;
     color:#4f4f4f;
-    font-family: 
+    font-family: 'Exo 2', sans-serif;
 }
 a{
-    font-family: 
-    color:;
+    font-family: 'Exo 2', sans-serif;
+    color:#b3b3ff;;
     text-decoration: none;
 }
 h1, h2, h3{
-    font-family: 
-    color:;
+    font-family: 'Varela Round', sans-serif;
+    color:#000080;
+    text-align:center;
+    margin-bottom:5%;
 }
 h1{
-    color:;
+    color:#000080;
     font-size:5rem;
 }
 h2{
@@ -76,8 +65,24 @@ h3{
 section{
     padding:4% 0;
 }
-
-/*Header Section*/
+button{
+    padding:3% 5%;
+    margin-top:5%;
+    color:#b3b3ff;
+    background-color:#000080;
+    border:2px solid #000080;
+    font-size:1.6rem;
+    transition:2s;
+    border-radius: 55%;
+}
+button:hover{
+    color:#000080;
+    background-color:#b3b3ff;
+}
+/*header section styles*/
+header{
+    background-color: #b3b3ff;
+}
 nav{
     display:flex;
     justify-content: space-between;
@@ -86,13 +91,85 @@ nav{
     width:100%;
     top:0;
     z-index:999;
-    background-color:rgba(255,255,255,0.8);
-}
-.logo{
-    width:6%;
+    background-color:rgba(179, 179, 255,0.3);
+    color:#b3b3ff;
 }
 .links{
     width:50%;
     display:flex;
     justify-content: space-evenly;
+}
+.links div{
+    background-color: #000080;
+    border-radius: 90%;
+}
+h2{
+    display: flex;
+    justify-content: right;
+}
+
+/*Top Section Styles*/
+#top{
+    height:100vh;
+    background-image:url('../Photos/SawtoothsJuly2019.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+/*Project Section styles*/
+#Projects{
+    padding-bottom:0;
+}
+.pages{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding:5%;
+}
+
+.pages div{
+    width:33%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    height:45vh;
+    border:1px solid #000080;
+}
+.projectOne{
+    background-image:url('../Photos/unsplash1.jpeg');
+}
+.projectTwo{
+    background-image:url('../Photos/unsplash2.jpeg');
+}
+.projectThree{
+    background-image:url('../Photos/unsplash3.jpeg');
+}
+.projectFour{
+    background-image:url('../Photos/unsplash4.jpeg');
+}
+.projectFive{
+    background-image:url('../Photos/unsplash5.jpeg');
+}
+.more{
+    background-image:url('../Photos/unsplash6.jpeg');
+}
+/*footer section styles */
+footer{
+    display:flex;
+    flex-wrap:wrap;
+    padding:4% 0;
+    background-image: url('../Photos/unsplash7.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
 }
