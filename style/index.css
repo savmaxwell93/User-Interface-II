@@ -54,7 +54,7 @@ h1, h2, h3{
 }
 h1{
     color:#000080;
-    font-size:5rem;
+    font-size:8rem;
 }
 h2{
     font-size:3.5rem;
@@ -120,10 +120,20 @@ h2{
     align-items: center;
     text-align:center;
 }
-
+#top p{
+    font-size: 2rem;
+}
+.about button{
+    font-size: 3rem;
+}
 /*Project Section styles*/
 #Projects{
     padding-bottom:0;
+}
+#projects h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
 }
 .pages{
     display:flex;
@@ -162,14 +172,25 @@ h2{
 }
 /*footer section styles */
 footer{
-    display:flex;
-    flex-wrap:wrap;
-    padding:4% 0;
     background-image: url('../Photos/unsplash7.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+footer a{ 
+    display:flex;
+    flex-wrap:wrap;
+    padding:4% 0;
     justify-content: center;
     align-items: center;
     text-align:center;
+}
+footer button{
+    font-size: 3rem;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
