@@ -1,1 +1,228 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /*border:1px solid grey;*/
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    background-color: #E7DDEB;
+    line-height:1.5;
+    color:#4f4f4f;
+    font-family: 'Exo 2', sans-serif;
+}
+a{
+    font-family: 'Exo 2', sans-serif;
+    color:#b3b3ff;;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family: 'Varela Round', sans-serif;
+    color:#000080;
+    text-align:center;
+    margin-bottom:5%;
+}
+h1{
+    color:#000080;
+    font-size:8rem;
+}
+h2{
+    font-size:3.5rem;
+}
+h3{
+    font-size:2.5rem;
+}
+section{
+    padding:4% 0;
+}
+button{
+    padding:3% 5%;
+    margin-top:5%;
+    color:#b3b3ff;
+    background-color:#000080;
+    border:2px solid #000080;
+    font-size:1.6rem;
+    transition:2s;
+    border-radius: 55%;
+}
+button:hover{
+    color:#000080;
+    background-color:#b3b3ff;
+}
+/*header section styles*/
+header{
+    background-color: #E7DDEB;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+    background-color:rgba(231, 221, 235,0.3);
+    color:#b3b3ff;
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.links div{
+    background-color: #000080;
+    border-radius: 90%;
+}
+h2{
+    display: flex;
+    justify-content: right;
+}
+
+/*Top Section Styles*/
+#top{
+    height:100vh;
+    background-image:url('../Photos/SawtoothsJuly2019.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+#top p{
+    font-size: 2rem;
+    color: #fff;
+}
+.about button{
+    font-size: 3rem;
+}
+/*Project Section styles*/
+#Projects{
+    padding-bottom:0;
+}
+#projects h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+.pages{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding:5%;
+}
+
+.pages div{
+    width:30%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    height:45vh;
+    border:1px solid #000080;
+    margin: 1%;
+}
+.projectOne{
+    background-image:url('../Photos/unsplash1.jpeg');
+}
+.projectTwo{
+    background-image:url('../Photos/unsplash2.jpeg');
+}
+.projectThree{
+    background-image:url('../Photos/unsplash3.jpeg');
+}
+.projectFour{
+    background-image:url('../Photos/unsplash4.jpeg');
+}
+.projectFive{
+    background-image:url('../Photos/unsplash5.jpeg');
+}
+.more{
+    background-image:url('../Photos/unsplash6.jpeg');
+}
+/*footer section styles */
+footer{
+    background-image: url('../Photos/unsplash7.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer a{ 
+    display:flex;
+    flex-wrap:wrap;
+    padding:4% 0;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+footer button{
+    font-size: 3rem;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/*Media Queries*/ 
+/*
+when we are building desktop first and scaling down we use max-width
+when we are building mobile first and scaling up we use min-width
+*/
+@media(max-width:800px){
+    /*apply these styles to any screen that is 800px or smaller*/
+}
+@media(max-width:500px){
+    /*apply these styles to any screen that is 500px or smaller*/
+    /*Header Styles*/
+    .title h2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 3%;
+    }
+    .links{
+        width: 100%;
+    }
+    /*Top Section Styles*/
+    #top{
+        justify-content: center;
+    }
+    /*Project Section Styles*/
+    .pages div{
+        width: 45%;
+        margin: 2%;
+}
