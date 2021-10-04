@@ -36,7 +36,7 @@ html{
 }
 body{
     font-size:1.6rem;
-    background-color: #b3b3ff;
+    background-color: #E7DDEB;
     line-height:1.5;
     color:#4f4f4f;
     font-family: 'Exo 2', sans-serif;
@@ -81,7 +81,7 @@ button:hover{
 }
 /*header section styles*/
 header{
-    background-color: #b3b3ff;
+    background-color: #E7DDEB;
 }
 nav{
     display:flex;
@@ -91,7 +91,7 @@ nav{
     width:100%;
     top:0;
     z-index:999;
-    background-color:rgba(179, 179, 255,0.3);
+    background-color:rgba(231, 221, 235,0.3);
     color:#b3b3ff;
 }
 .links{
@@ -122,6 +122,7 @@ h2{
 }
 #top p{
     font-size: 2rem;
+    color: #fff;
 }
 .about button{
     font-size: 3rem;
@@ -145,12 +146,13 @@ h2{
 }
 
 .pages div{
-    width:33%;
+    width:30%;
     background-size:cover;
     background-repeat: no-repeat;
     background-position:bottom center;
     height:45vh;
     border:1px solid #000080;
+    margin: 1%;
 }
 .projectOne{
     background-image:url('../Photos/unsplash1.jpeg');
@@ -193,4 +195,34 @@ footer button{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+/*Media Queries*/ 
+/*
+when we are building desktop first and scaling down we use max-width
+when we are building mobile first and scaling up we use min-width
+*/
+@media(max-width:800px){
+    /*apply these styles to any screen that is 800px or smaller*/
+}
+@media(max-width:500px){
+    /*apply these styles to any screen that is 500px or smaller*/
+    /*Header Styles*/
+    .title h2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 3%;
+    }
+    .links{
+        width: 100%;
+    }
+    /*Top Section Styles*/
+    #top{
+        justify-content: center;
+    }
+    /*Project Section Styles*/
+    .pages div{
+        width: 45%;
+        margin: 2%;
 }
